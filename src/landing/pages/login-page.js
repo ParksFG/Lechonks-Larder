@@ -23,14 +23,6 @@ export default function signInPage() {
             </label>
           </div>
 
-          <div class="row mb-4">
-            <div class="col">
-              <Link to="/forget-password">
-                <label className="right-label">Forget password?</label>
-              </Link>
-            </div>
-          </div>
-
           <button
             type="button"
             value="submit"
