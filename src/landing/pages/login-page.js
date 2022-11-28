@@ -1,47 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Divider, Form, Grid, Segment } from "semantic-ui-react";
 
 import "../../App.css";
 
-export default function signInPage() {
-  return (
-    <div className="text-center m-5-auto">
-      <h2>Sign In Here!</h2>
-      <div class="container-fluid">
-        <form class="login-form">
-          <div class="form-outline mb-4">
-            <input type="email" id="email-login" class="form-control" />
-            <label class="form-label" for="form2Example1">
-              Email address
-            </label>
-          </div>
+const SignInPage = () => (
+    <Segment placeholder>
+    <Grid columns={2} relaxed='very' stackable>
+      <Grid.Column>
+        <Form>
+          <Form.Input
+            icon='user'
+            iconPosition='left'
+            label='Username'
+            placeholder='Username'
+          />
+          <Form.Input
+            icon='lock'
+            iconPosition='left'
+            label='Password'
+            type='password'
+          />
 
-          <div class="form-outline mb-4">
-            <input type="password" id="password-login" class="form-control" />
-            <label class="form-label" for="form2Example2">
-              Password
-            </label>
-          </div>
+          <Button content='Login' primary />
+        </Form>
+      </Grid.Column>
 
-          <button
-            type="button"
-            value="submit"
-            class="btn btn-primary btn-block mb-4"
-          >
-            Sign in
-          </button>
+      <Grid.Column verticalAlign='middle'>
+        <Button content='Sign up' icon='signup' size='big' href='/register' />
+      </Grid.Column>
+    </Grid>
 
-          <div class="text-center">
-            <p>
-              First time? <Link to="/register">Create an account</Link>.
-            </p>
-            <p>
-              <Link to="/home">Back to Homepage</Link>.
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
+    <Divider vertical>Or</Divider>
+  </Segment>
   );
-}
+
+
+export default SignInPage;
