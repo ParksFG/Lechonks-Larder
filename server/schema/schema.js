@@ -1,6 +1,6 @@
 const { cards, users } = require('../sampleData')
 
-const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLSchema, GraphQLList, buildClientSchema,} = require('graphql');
+const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLSchema, GraphQLList, buildClientSchema, GraphQLNonNull} = require('graphql');
 
 
 // Card Type
@@ -106,13 +106,63 @@ const RootQuery = new GraphQLObjectType({
         },
 
 
-        
+
 
 
     }
 });
 
 
+//Mutations
+
+const mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+        addCard: {
+            type: CardType,
+            args: {
+                name: { type: GraphQLNonNull(GraphQLString) },
+                supertype: { type: GraphQLNonNull(GraphQLString) },
+                subtype: { type: GraphQLNonNull(GraphQLString) },
+                image: { type: GraphQLNonNull(GraphQLString) },
+                uid: { type: GraphQLNonNull(GraphQLString) },
+                username: { type: GraphQLNonNull(GraphQLString) },  
+            },
+            resolve(parent, args) {
+                //insert mongoose model here for card
+            }
+            //return mongoose model.save();
+        },
+
+        deleteCard: {
+            type: CardType,
+            args: {
+                //create arg that will use a unique identifier to remove said card
+            }
+        },
+
+        addUser: {
+            type: UserType,
+            args: {
+                id: { type: GraphQLNonNull(GraphQLString) },
+                uid: { type: GraphQLNonNull(GraphQLString) },
+                username: { type: GraphQLNonNull(GraphQLString) },
+                email: { type: GraphQLNonNull(GraphQLString) },
+                password: { type: GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent, args){
+                //insert mongoose model here for user
+            }
+            //return mongoose model.save();
+        },
+
+        
+
+    }
+});
+
+
 module.exports = new GraphQLSchema({
-    query: RootQuery
+    query: RootQuery,
+    mutation
 });
