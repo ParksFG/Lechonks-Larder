@@ -35,9 +35,8 @@
 
 - [React]()
 - [Semantic UI]()
-- []()
+- [MongoDB]()
 - [Coolors](https://coolors.co/)
-- []()
 
 #
 #### Authors
