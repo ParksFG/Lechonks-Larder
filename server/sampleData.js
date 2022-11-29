@@ -33,12 +33,16 @@ const cards = [
 const users = [
     {
         uid: '12345',
-        username: 'tee-oni'
+        username: 'tee-oni',
+        email: "teeoni@gmail.com",
+        password: "password1234"
     },
 
     {
         uid: '45678',
-        username: 'tree'
+        username: 'tree',
+        email: "tree@gmail.com",
+        password: "tree1234"
     }
 ];
 
