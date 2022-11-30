@@ -7,6 +7,7 @@
     "mongoose": "^6.7.4",
     "nodemon": "^2.0.20",
     "bcrypt": "^5.0.0"
+  },
   "name": "larder_app",
   "version": "1.0.0",
   "description": "",
@@ -22,3 +23,5 @@
     "concurrently": "^5.1.0"
   }
 }
+
+
