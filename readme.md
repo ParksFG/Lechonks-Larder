@@ -35,17 +35,29 @@
 #### Technologies Used
 
 - [![React]][react-url]
+
 - [![Javascript]][javascript-url]
+
 - [![Semantic UI React]][semantic-ui-url]
+
 - [![GraphQL]][graphql-url]
+
 - [![MongoDB]][mongodb-url]
+
 - [![Heroku]][heroku-url]
+
 - [![Coolers]][coolers-url]
+
 - [![Express.js]][express-url]
+
 - [![NPM]][npm-url]
+
 - [![Apollo]][apollo-url]
+
 - [![Github]][github-url]
+
 - [![VSCode]][vscode-url]
+
 - [![Node.js]][nodejs-url]
 
 #
@@ -62,37 +74,47 @@
 
   - [![Github]][tony-url]
   
-  - [![Portfolio]][tony-portfolio]
+  - [![Portfolio]][tony-portfolio-url]
+
+#
 
 - _Parker Gay_
 
   - [![Github]][parker-url]
   
-  - [![Portfolio]][parker-portfolio]
+  - [![Portfolio]][parker-portfolio-url]
+
+#
 
 - _Breven Glasgow_
 
   - [![Github]][breven-url]
   
-  - [![Portfolio]][breven-portfolio]
+  - [![Portfolio]][breven-portfolio-url]
+
+#
 
 - _Jacob Schwal_
 
   - [![Github]][jacob-url] 
   
-  - [![Portfolio]][jacob-portfolio]
+  - [![Portfolio]][jacob-portfolio-url]
+
+#
 
 - _Scott Sterling_
 
   - [![Github]][scott-url] 
   
-  - [![Portfolio]][scott-portfolio]
+  - [![Portfolio]][scott-portfolio-url]
+
+#
 
 - _Samuel Hsu_
 
   - [![Github]][sam-url]
   
-  - [![Portfolio]][sam-portfolio]
+  - [![Portfolio]][sam-portfolio-url]
 
 <!-- Badge Styling -->
 [Github]:https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
@@ -108,7 +130,7 @@
 [Javascript]:https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [React]:https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [Node.js]:https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
-[Portfolio]:https://img.shields.io/badge/Portfolio-informational?style=for-the-badge
+[Portfolio]:https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
 
 <!-- Tech Urls -->
 [github-url]:https://github.com/
@@ -134,9 +156,9 @@
 [sam-url]:https://github.com/sky19930112
 
 <!-- Contributor Portfolios -->
-[tony-portfolio]:
-[parker-portfolio]:
-[brevenn-portfolio]:
-[jacob-portfolio]:
-[scott-portfolio]:
-[sam-portfolio]:
+[tony-portfolio-url]:
+[parker-portfolio-url]:
+[brevenn-portfolio-url]:
+[jacob-portfolio-url]:
+[scott-portfolio-url]:
+[sam-portfolio-url]:
