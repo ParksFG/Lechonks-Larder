@@ -2,19 +2,19 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node index.js",
+    "watch": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.18.2",
-    "graphql": "^16.5.0",
+    "apollo-server-express": "^3.9.0",
     "bcrypt": "^5.0.0",
     "express": "^4.17.1",
+    "graphql": "^16.5.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.10"
   },
