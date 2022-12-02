@@ -1,0 +1,23 @@
+* {
+    background-color: #6b7fd7;
+    font-family: "Archivo", sans-serif;
+}
+/* profile page styling */
+.prof-page-container {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+
+.profile-header {
+    margin-top: 20px !important;
+    padding: 12px !important;
+}
+
+.profile-btn {
+    margin: 10px !important;
+    outline: 1px solid black;
+    border-radius: 5px;
+}
+
