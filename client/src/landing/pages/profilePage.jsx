@@ -1,19 +1,13 @@
 import React, { Component } from "react";
 import {
-  Image,
-  Container,
   Divider,
   Menu,
   Grid,
-  Segment,
   Form,
-  Card,
   Header,
 } from "semantic-ui-react";
 
 import "../../App.css";
-
-fetch = "https://api.pokemontcg.io/v2/cards/";
 
 export default class ProfilePage extends Component {
   state = { activeItem: "bio" };
@@ -48,23 +42,30 @@ export default class ProfilePage extends Component {
               />
             </Menu>
           </Grid.Column>
-          <Card.Group className="prof-card-group">
-            <Card></Card>
-            <Card></Card>
-          </Card.Group>
-          <Grid.Column stretched ></Grid.Column>
+          <Grid.Column stretched width={50}>
+            <div className="ui segment" style={{width: '585px', padding: '0'}}>
+                <Form>
+
+                </Form>
+            </div>
+          </Grid.Column>
+          
         </Grid>
       </div>
     );
   }
 }
 
-// {/* <Image src='' size="" rounded /> */}
 
-// // const ProfilePage = () => (
-// //     <div>
-// //         <Container textAlign='center'>Your Profile</Container>
-// //         <Divider />
 
-// //     </div>
-// // );
+{/* <Card.Group className="prof-card-group">
+<Card>
+    <Image src='https://images.pokemontcg.io/swsh9/18_hires.png' />
+</Card>
+<Card>
+    <Image src='https://images.pokemontcg.io/swsh9/18_hires.png' />
+</Card>
+<Card>
+    <Image src='https://images.pokemontcg.io/swsh9/18_hires.png' />
+</Card>
+</Card.Group> */}

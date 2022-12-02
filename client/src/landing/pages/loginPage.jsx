@@ -26,7 +26,7 @@ const SignInPage = () => (
       </Grid.Column>
 
       <Grid.Column verticalAlign='middle'>
-        <Button content='Sign up' icon='signup' size='big' href='/register' />
+        <Button content='Sign up' icon='signup' size='big' href='/pages/registerPage' />
       </Grid.Column>
     </Grid>
 
