@@ -7,11 +7,11 @@ const RegistrationPage = () =>{
   return (
     <Form>
       <Form.Input
-        error={{ content: "Please enter your first name", pointing: "below" }}
+        error={{ content: "Please enter your Username", pointing: "below" }}
         fluid
-        label="First name"
-        placeholder="First name"
-        id="form-input-first-name"
+        label="Username"
+        placeholder="Username"
+        id="form-input-user-name"
       />
       <Form.Input
         error="Please enter your last name"
