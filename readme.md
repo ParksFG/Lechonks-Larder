@@ -2,19 +2,19 @@
 
 #
 
-<!-- Example Image or Gif goes here -->
-<!-- Description goes here -->
+* Welcome to Lechonk's Larder! In this repository, we have developed an Interactive MERN Application that utilizes data from an API to allow users to collect pokemon cards. There are many variations for users to collect and store from basic cards all the way up to Secret Rare. This application was developed using **React**, **Semantic UI**, and **GraphQL** while storing the data for the app in a **MongoDB** database.
 
 #
 
 ## Table of Contents
 
-- [User Story](#user-story)
-- [Installation](#installation)
-- [Deployed App](#deployed-application)
-- [Tech](#technologies-used)
-- [License](#license)
-- [Authors](#authors)
+- *[User Story](#user-story)*
+- *[Installation](#installation)*
+- *[Deployed App](#deployed-application)*
+- *[Tech](#technologies-used)*
+- *[Acknowledgments](#acknowledgments)*
+- *[License](#license)*
+- *[Authors](#authors)*
 
 #
 
@@ -28,7 +28,7 @@
 
 ### Deployed Application
 
-- [Lechonk's Larder]()
+- **[Lechonk's Larder]()**
 
 #
 
@@ -62,103 +62,118 @@
 
 #
 
+#### Acknowledgments
+
+- **[Pokemon TGC API][pkmtgc-url]**
+- **[Stack Overflow][stackoverflow-url]**
+
+#
+
 #### License
 
-* [The Coding Boot Camp of UT-Austin]()
+- **[The Coding Boot Camp of UT-Austin]()**
 
 #
 
 #### Authors
 
-- _Tony Zapeda_
+- **Tony Zapeda**
 
   - [![Github]][tony-url]
-  
-  - [![Portfolio]][tony-portfolio-url]
 
-#
+  - [![Portfolio]][tz-portfolio-url]
 
-- _Parker Gay_
+
+
+- **Parker Gay**
 
   - [![Github]][parker-url]
-  
-  - [![Portfolio]][parker-portfolio-url]
 
-#
+  - [![Portfolio]][pg-portfolio-url]
 
-- _Breven Glasgow_
+
+
+- **Breven Glasgow**
 
   - [![Github]][breven-url]
-  
-  - [![Portfolio]][breven-portfolio-url]
 
-#
+  - [![Portfolio]][bg-portfolio-url]
 
-- _Jacob Schwal_
 
-  - [![Github]][jacob-url] 
-  
-  - [![Portfolio]][jacob-portfolio-url]
 
-#
+- **Jacob Schwal**
 
-- _Scott Sterling_
+  - [![Github]][jacob-url]
 
-  - [![Github]][scott-url] 
-  
-  - [![Portfolio]][scott-portfolio-url]
+  - [![Portfolio]][js-portfolio-url]
 
-#
 
-- _Samuel Hsu_
+
+- **Scott Sterling**
+
+  - [![Github]][scott-url]
+
+  - [![Portfolio]][ss-portfolio-url]
+
+
+
+- **Samuel Hsu**
 
   - [![Github]][sam-url]
-  
-  - [![Portfolio]][sam-portfolio-url]
+
+  - [![Portfolio]][sh-portfolio-url]
+
+#
 
 <!-- Badge Styling -->
-[Github]:https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-[VSCode]:https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
-[Apollo]:https://img.shields.io/badge/Apollo-blueviolet?style=for-the-badge&logo=apollo%20graphql&logoColor=white
-[NPM]:https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
-[Express.js]:https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
-[Heroku]:https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
-[Coolers]:https://img.shields.io/badge/Coolers-6B7FD7?style=for-the-badge&logo=coolers&logoColor=white
-[MongoDB]:https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
-[GraphQL]:https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white
-[Semantic UI React]:https://img.shields.io/badge/-Semantic%20UI%20React-86CCDC?style=for-the-badge&logo=react&logoColor=white
-[Javascript]:https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
-[React]:https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[Node.js]:https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
-[Portfolio]:https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
+
+[github]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+[vscode]: https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
+[apollo]: https://img.shields.io/badge/Apollo-blueviolet?style=for-the-badge&logo=apollo%20graphql&logoColor=white
+[npm]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
+[express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+[heroku]: https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
+[coolers]: https://img.shields.io/badge/Coolers-6B7FD7?style=for-the-badge&logo=coolers&logoColor=white
+[mongodb]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[graphql]: https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white
+[semantic ui react]: https://img.shields.io/badge/-Semantic%20UI%20React-86CCDC?style=for-the-badge&logo=react&logoColor=white
+[javascript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+[react]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[portfolio]: https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
 
 <!-- Tech Urls -->
-[github-url]:https://github.com/
-[vscode-url]:https://code.visualstudio.com/
-[apollo-url]:https://www.apollographql.com/
-[npm-url]:https://www.npmjs.com/
-[express-url]:https://expressjs.com/
-[heroku-url]:https://heroku.com/
-[coolers-url]:https://coolors.co/
-[mongodb-url]:https://www.mongodb.com/
-[graphql-url]:https://graphql.org/
-[semantic-ui-url]:https://react.semantic-ui.com/
-[javascript-url]:https://www.javascript.com/
-[react-url]:https://reactjs.org/
-[nodejs-url]:https://nodejs.org/
+
+[github-url]: https://github.com/
+[vscode-url]: https://code.visualstudio.com/
+[apollo-url]: https://www.apollographql.com/
+[npm-url]: https://www.npmjs.com/
+[express-url]: https://expressjs.com/
+[heroku-url]: https://heroku.com/
+[coolers-url]: https://coolors.co/
+[mongodb-url]: https://www.mongodb.com/
+[graphql-url]: https://graphql.org/
+[semantic-ui-url]: https://react.semantic-ui.com/
+[javascript-url]: https://www.javascript.com/
+[react-url]: https://reactjs.org/
+[nodejs-url]: https://nodejs.org/
+[pkmtgc-url]: https://pokemontcg.io/
+[stackoverflow-url]: https://stackoverflow.com/
 
 <!-- Contributor Urls -->
-[tony-url]:https://github.com/teeoni
-[parker-url]:https://github.com/parksfg
-[breven-url]:https://github.com/brevenn
-[jacob-url]:https://github.com/jacobschwal
-[scott-url]:https://github.com/overnightsolo
-[sam-url]:https://github.com/sky19930112
+
+[tony-url]: https://github.com/teeoni
+[parker-url]: https://github.com/parksfg
+[breven-url]: https://github.com/brevenn
+[jacob-url]: https://github.com/jacobschwal
+[scott-url]: https://github.com/overnightsolo
+[sam-url]: https://github.com/sky19930112
 
 <!-- Contributor Portfolios -->
-[tony-portfolio-url]:
-[parker-portfolio-url]:
-[brevenn-portfolio-url]:
-[jacob-portfolio-url]:
-[scott-portfolio-url]:
-[sam-portfolio-url]:
+
+[tz-portfolio-url]: https://
+[pg-portfolio-url]: https://parksfg.github.io/My-Portfolio-Site/
+[bg-portfolio-url]: https://brevenn.github.io/Portfolio-Full-Stack/
+[js-portfolio-url]: https://
+[ss-portfolio-url]: https://overnightsolo.github.io/scott-sterling-portfolio/
+[sh-portfolio-url]: https://sky19930112.github.io/Portfolios/
