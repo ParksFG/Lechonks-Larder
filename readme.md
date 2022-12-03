@@ -174,6 +174,6 @@
 [tz-portfolio-url]: https://
 [pg-portfolio-url]: https://parksfg.github.io/My-Portfolio-Site/
 [bg-portfolio-url]: https://brevenn.github.io/Portfolio-Full-Stack/
-[js-portfolio-url]: https://
+[js-portfolio-url]: https://jacobschwalbach.com/
 [ss-portfolio-url]: https://overnightsolo.github.io/scott-sterling-portfolio/
 [sh-portfolio-url]: https://sky19930112.github.io/Portfolios/
