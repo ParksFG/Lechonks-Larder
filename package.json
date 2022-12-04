@@ -1,13 +1,4 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "express-graphql": "^0.12.0",
-    "graphiql": "^2.2.0",
-    "graphql": "^15.8.0",
-    "mongoose": "^6.7.4",
-    "nodemon": "^2.0.20",
-    "bcrypt": "^5.0.0"
-  },
   "name": "larder_app",
   "version": "1.0.0",
   "description": "",
@@ -16,12 +7,13 @@
     "start": "node server/index.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
+    "dev": "nodemon server/index.js",
     "build": "cd client && npm run build"
   },
   "keywords": [],
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
   }
 }
-
-

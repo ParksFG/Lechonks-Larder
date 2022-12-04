@@ -1,10 +1,11 @@
 const express = require('express');
 //require('dotenv').config();
-const db = require('./config/connection');
-const { ApolloServer } = require('apollo-server-express');
-const port = process.env.PORT || 3001;
+require('dotenv').config();
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema.js');
+const db = require('./config/connection');
+
+const port = process.env.PORT || 3001;
 const app = express();
 
 if (process.env.NODE_ENV === 'production') {
