@@ -1,7 +1,9 @@
 import React from "react";
-import { Tab, Form, Card, Image } from "semantic-ui-react";
+import { Tab, Card } from "semantic-ui-react";
 import ProfCards from "./profCards";
 import ProfileBio from "./profBio";
+import ProfWishlist from "./profWishlist";
+
 const panes = [
   {
     menuItem: "Cards",
