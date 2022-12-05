@@ -1,26 +1,21 @@
 const express = require('express');
 //require('dotenv').config();
 require('dotenv').config();
+const cors = require('cors');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema.js');
-const db = require('./config/connection');
+const connectDB = require('./config/connection');
 
 const port = process.env.PORT || 3001;
 const app = express();
-
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-  }
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-  
+ 
+connectDB();
+app.use(cors());
 app.use('/graphql', graphqlHTTP({
     schema,
-    graphiql: true,
+    graphiql: process.env.NODE_ENV === 'production',
 }));
 
-db.once('open', () => {
-    app.listen(port, console.log(`Server Running on port ${port}`));
-});
+
+app.listen(port, console.log(`Server Running on port ${port}`));
+
