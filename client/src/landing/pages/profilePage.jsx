@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { Image, Container, Divider, Menu, Grid, Segment, Form, Card } from 'semantic-ui-react';
-
+import { Container, Divider, Menu, Grid, Card } from 'semantic-ui-react';
+import  PokemonCardImageSearch  from "../../poketest";
 import "../../App.css";
+import pokemon from 'pokemontcgsdk'
+pokemon.configure({apiKey: '325033bd-fc04-4141-aec9-7a359727ce1e'})
+
 
 export default class ProfilePage extends Component {
     state = { activeItem: 'bio' }
@@ -11,8 +14,11 @@ export default class ProfilePage extends Component {
 
     render() {
         const { activeItem } = this.state;
-
+        
         return (
+            
+
+
         <div>
             <Container textAlign='center'>Your Profile</Container>
             <Divider />
@@ -33,7 +39,7 @@ export default class ProfilePage extends Component {
                 </Grid.Column>
 
                 <Grid.Column stretched width={12}>
-                    
+                    <PokemonCardImageSearch name={'blastoise'}></PokemonCardImageSearch>
                 </Grid.Column>
             </Grid>
         </div>
