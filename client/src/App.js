@@ -6,9 +6,10 @@ import SignInPage from "./landing/pages/loginPage";
 import ProfTab from "./components/profileTab";
 
 
+
 function App() {
     return (
-        <ProfilePage />
+        <RegistrationPage />
     );
 }
 
