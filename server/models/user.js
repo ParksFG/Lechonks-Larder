@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
-const cardSchema = require("./card");
+
 
 const userSchema = new mongoose.Schema(
   {
@@ -20,18 +20,13 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // set cards to be an array of data to the cardSchema
+
     uid: {
         type: String,
         require: true
     }
   },
-  // set this to use virtual below
-  {
-    toJSON: {
-      virtuals: true,
-    },
-  }
+  
 );
 
 // set up pre-save middleware to create password
@@ -50,4 +45,4 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('UserMongoose', userSchema);
