@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, Grid, Icon, Image } from "semantic-ui-react";
+import { Grid, Button, Image } from "semantic-ui-react";
 
 const ProfCards = () => (
-  <Grid columns={4}>
+  <Grid columns={6} divided>
     <Grid.Row style={{ padding: 20}}>
       <Grid.Column>
         <Image

@@ -8,7 +8,7 @@ import "../../App.css";
 const ProfilePage = () => (
   <div className="prof-page-container">
     <Header textAlign="center" className="profile-header">
-      <h3>Profile</h3>
+      <h3>Trainer Profile</h3>
     </Header>
     <Divider />
     <ProfTab />

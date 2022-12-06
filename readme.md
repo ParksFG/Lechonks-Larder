@@ -20,9 +20,22 @@
 
 ### User Story
 
+```
+AS A Pokemon card collector.
+I WANT TO have a virtual representation of my card collection.
+SO THAT I CAN keep track of, showcase, and monitor market value of my cards.
+```
+
 #
 
 ### Installation
+
+* First the user will need to clone the repository:
+  - `git clone git@github.com:ParksFG/Lechonks-Larder.git`
+
+* The user will imput `npm install` into the command-line.
+
+* The user will then imput `npm start` in the command-line to begin the application.
 
 #
 
@@ -171,7 +184,7 @@
 
 <!-- Contributor Portfolios -->
 
-[tz-portfolio-url]: https://
+[tz-portfolio-url]: https://teeoni.github.io/TZ-Stack-Services/
 [pg-portfolio-url]: https://parksfg.github.io/My-Portfolio-Site/
 [bg-portfolio-url]: https://brevenn.github.io/Portfolio-Full-Stack/
 [js-portfolio-url]: https://jacobschwalbach.com/
