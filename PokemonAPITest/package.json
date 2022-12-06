@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "devDependencies": {
-    "pokemontcgsdk": "^2.0.0"
-  }
-}
