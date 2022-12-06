@@ -5,6 +5,10 @@ const cardSchema = require("./card");
 
 const userSchema = new mongoose.Schema(
   {
+    uid: {
+      type: String,
+      require: true
+    }
     username: {
       type: String,
       required: true,
@@ -21,10 +25,7 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     // set cards to be an array of data to the cardSchema
-    uid: {
-        type: String,
-        require: true
-    }
+    savedCards: [cardSchema]
   },
   // set this to use virtual below
   {
@@ -33,7 +34,7 @@ const userSchema = new mongoose.Schema(
     },
   }
 );
-
+/* codes for bcrypt and token
 // set up pre-save middleware to create password
 userSchema.pre("save", async function (next) {
   if (this.isNew || this.isModified("password")) {
@@ -48,6 +49,6 @@ userSchema.pre("save", async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
-
+*/
 
 module.exports = mongoose.model('User', userSchema);

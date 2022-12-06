@@ -148,6 +148,14 @@ const RootQuery = new GraphQLObjectType({
         },
         resolve(parent, args) {
           //insert mongoose model here for user
+          
+          /* codes for token
+          const { id, uid, username, email, password} = args
+        const user = new User({ id, uid, username, email, password })
+        await user.save()
+        const token = signToken(user)
+        return token
+          */
         },
         //return mongoose model.save();
       },
