@@ -1,6 +1,7 @@
 import React from 'react'
 import { Segment, Grid, Form, Button, Divider } from 'semantic-ui-react'
 
+
 const Login = () => {
 
     return (
@@ -28,7 +29,7 @@ const Login = () => {
           </Grid.Column>
     
           <Grid.Column verticalAlign="middle">
-              <Button content="Sign up" icon="signup" size="big" a href='/Register'/>
+              <Button content="Sign up" icon="signup" size="big" a href='/register'/>
           </Grid.Column>
         </Grid>
     
