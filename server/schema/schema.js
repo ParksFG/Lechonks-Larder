@@ -151,8 +151,14 @@ const mutation = new GraphQLObjectType({
         email: { type: GraphQLNonNull(GraphQLString) },
         password: { type: GraphQLNonNull(GraphQLString) },
       },
-      resolve(parent, args) {
+      async resolve(parent, args) {
         //insert mongoose model here for user
+        const { id, uid, username, email, password} = args
+        const user = new User({ id, uid, username, email, password })
+
+        await user.save()
+        const token = signToken(user)
+        return token
       },
       //return mongoose model.save();
     },
