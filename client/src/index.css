@@ -92,3 +92,8 @@ h3 {
 .ui.register-header-text {
   font-family: "Pokemon Solid", sans-serif;
 }
+
+.homepageDiv {
+  color: white;
+  background-color: #883955;
+}
