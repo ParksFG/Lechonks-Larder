@@ -23,6 +23,11 @@ return (
         <List.Header a href='/Login'>Login</List.Header>
         </List.Content>
     </List.Item>
+    <List.Item>
+        <List.Content>
+        <List.Header a href='/Profile'>Profile</List.Header>
+        </List.Content>
+    </List.Item>
   </List>
 
 
