@@ -1,78 +1,38 @@
-*, body {
-  font-family: "Pokemon Solid", sans-serif;
-}
-
-h3 {
-  font-family: "Pokemon Solid", sans-serif;
-}
-/* profile page styling */
-.prof-page-container {
-  background-color: #6b7fd7;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.profile-header {
-  justify-content: center;
-  margin-top: 20px !important;
-  padding: 12px !important;
-  background-color: maroon;
-  font-family: "Pokemon Solid", sans-serif;
-  width: 100px;
-  border: 2px solid #4C3549;
-  border-radius: 5px;
-  font-family: "Pokemon Solid", sans-serif;
-}
-
-.profile-btn {
-  margin: 10px !important;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-/* Bio styling */
-
-.ui .bio-form {
-  margin: 10px;
-  padding: 20px 15px;
-}
-
-.labels {
-    padding: 10px !important;
-}
-
-/* Wishlist Styling */
-#segment{
-  background: transparent;
-  background-color: #883955;
-  color: aliceblue;
-}
-
-/* Footer styling */
-
-.main-footer {
+.App {
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #6E8387;
 }
 
-#header {
-  font-family: "Pokemon Solid", sans-serif;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-/* Registration Styling */
-.ui.page-container {
-  margin: auto;
-  padding: 15px;
-  border: 2px solid #4C3549;
-  background-color: #6E8387;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
   min-height: 100vh;
-  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.ui.register-header-text {
-  font-family: "Pokemon Solid", sans-serif;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
