@@ -51,11 +51,18 @@ const ProfileBio = () => (
       label="Email"
       placeholder="ash@ketchum.com"
     />
-    <Form.Field
-      id="form-button-control-public"
-      control={Button}
-      content="Confirm"
-    />
+    <Form.Group widths="equal">
+      <Form.Field
+        id="form-button-control-public"
+        control={Button}
+        content="Confirm"
+      />
+      <Form.Field
+        id="form-button-control-public"
+        control={Button}
+        content="Edit Info"
+      />
+    </Form.Group>
   </Form>
 );
 
