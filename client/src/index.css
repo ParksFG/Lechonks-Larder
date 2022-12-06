@@ -97,3 +97,18 @@ h3 {
 .ui.register-header-text {
   font-family: "Pokemon Solid", sans-serif;
 }
+
+/* Card Container Styling */
+
+.user-card-container {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 75vw;
+  background-color: #883955;
+}
+
+/* Footer Styling */
+
+.footer-page {
+  background-color: #4C3549;
+}
