@@ -23,16 +23,12 @@ function App() {
     <div className='App'>
       <ApolloProvider client={client}/>
       <PokeHeader name={'Super Team'} />
-      <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Search' element={<Search/>} />
         <Route path='/Login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/Profile' element={<Profile/>} />
-
-      
-        
 
 
       </Routes>
