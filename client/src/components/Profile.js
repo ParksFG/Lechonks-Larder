@@ -2,6 +2,7 @@ import React from "react";
 import { Divider, Header } from "semantic-ui-react";
 import ProfTab from "./profile/ProfileTab";
 import PageFoot from "./page/PageFoot";
+import Cards from "./cards"
 
 
 const Profile = () => {
@@ -13,7 +14,8 @@ const Profile = () => {
       <Divider />
       <ProfTab />
       <Divider section />
-
+      <Header as= 'h3'>Cards</Header>
+        <Cards />
       <PageFoot />
     </div>
   );
