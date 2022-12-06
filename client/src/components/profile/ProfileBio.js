@@ -39,6 +39,27 @@ const ProfileBio = () => (
         searchInput={{ id: "form-select-control-gender" }}
       />
     </Form.Group>
+    <Form.Group widths='equal'>
+    <Form.Field
+        id="form-input-control-first-name"
+        control={Input}
+        label="Favorite Type?"
+        placeholder="Ghost Type"
+      />
+      <Form.Field
+        className="last-name"
+        id="form-input-control-last-name"
+        control={Input}
+        label="Favorite Generation?"
+        placeholder="Generation 3"
+      />
+      <Form.Field
+        id="form-input-control-last-name"
+        control={Input}
+        label="Favorite Game"
+        placeholder="Pokemon: Emerald"
+      />
+    </Form.Group>
     <Form.Field
       id="form-textarea-control-opinion"
       control={TextArea}

@@ -14,7 +14,6 @@ const Profile = () => {
       <ProfTab />
       <Divider section />
 
-      <PageFoot />
     </div>
   );
 };
