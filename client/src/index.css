@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.homepageDiv {
+  color: white;
+  background-color: #883955;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -91,9 +96,4 @@ h3 {
 
 .ui.register-header-text {
   font-family: "Pokemon Solid", sans-serif;
-}
-
-.homepageDiv {
-  color: white;
-  background-color: #883955;
 }
