@@ -35,7 +35,6 @@ h3, h3 {
   width: 100px;
   border: 2px solid #4C3549;
   border-radius: 5px;
-  font-family: "Pokemon Solid", sans-serif;
 }
 
 .profile-btn {
@@ -96,7 +95,10 @@ h3, h3 {
 /* Card Container Styling */
 
 .user-card-container {
-  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 75vw;
+  background-color: #883955;
 }
 
 /* Footer Styling */
