@@ -41,8 +41,7 @@ SO THAT I CAN keep track of, showcase, and monitor market value of my cards.
 
 ### Deployed Application
 
-- **[Lechonk's Larder]()**
-
+- **[Lechonk's Larder](https://lechonks-larder.herokuapp.com/)**
 #
 
 #### Technologies Used
@@ -185,7 +184,7 @@ SO THAT I CAN keep track of, showcase, and monitor market value of my cards.
 <!-- Contributor Portfolios -->
 
 [tz-portfolio-url]: https://teeoni.github.io/TZ-Stack-Services/
-[pg-portfolio-url]: https://parksfg.github.io/My-Portfolio-Site/
+[pg-portfolio-url]: https://parksfg.github.io/Updated-Portfolio/
 [bg-portfolio-url]: https://brevenn.github.io/Portfolio-Full-Stack/
 [js-portfolio-url]: https://jacobschwalbach.com/
 [ss-portfolio-url]: https://overnightsolo.github.io/scott-sterling-portfolio/
