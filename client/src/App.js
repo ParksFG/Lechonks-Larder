@@ -12,8 +12,12 @@ import { Routes, Route } from 'react-router-dom'
 import { ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client'
 
 
+
+
+
+
 const client = new ApolloClient({
-  url: 'http://localhost:5000/graphql',
+  uri: 'http://localhost:5000/graphql',
   cache: new InMemoryCache(),
 })
 
@@ -21,7 +25,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <div className='App'>
-      <ApolloProvider client={client}/>
+      <ApolloProvider client={client}>
       <PokeHeader name={'Super Team'} />
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -32,6 +36,8 @@ function App() {
 
 
       </Routes>
+      </ApolloProvider>
+     
 
       <PageFoot />
     </div>
@@ -40,3 +46,4 @@ function App() {
 }
 
 export default App;
+
