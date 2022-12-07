@@ -8,7 +8,7 @@ import Search from './components/Search';
 import Register from './components/register'
 import Profile from './components/Profile';
 import PageFoot from './components/page/PageFoot';
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client'
 
 
