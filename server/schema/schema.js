@@ -1,10 +1,9 @@
-const { cards, users } = require("../sampleData");
-
 const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLSchema, GraphQLList, GraphQLNonNull} = require('graphql');
+const { Card } = require('semantic-ui-react');
 
 //Mongoose Models
-const Card = require('../models/card');
-const User = require('../models/user');
+const CardMongoose = require('../models/card');
+const UserMongoose = require('../models/user');
 
 
 // Card Type
@@ -40,7 +39,7 @@ const RootQuery = new GraphQLObjectType({
       cards: {
         type: new GraphQLList(CardType),
         resolve(parent, args) {
-          return Card.find();
+          return CardMongoose.find();
         },
       },
   
@@ -49,7 +48,7 @@ const RootQuery = new GraphQLObjectType({
         type: CardType,
         args: { id: { type: GraphQLID } },
         resolve(parent, args) {
-          return Card.findById(args.id);
+          return CardMongoose.findById(args.id);
         },
       },
   
@@ -58,7 +57,7 @@ const RootQuery = new GraphQLObjectType({
         type: CardType,
         args: { name: { type: GraphQLID } },
         resolve(parent, args) {
-          return Card.findById(args.name);
+          return CardMongoose.findById(args.name);
         },
       },
   
@@ -67,7 +66,7 @@ const RootQuery = new GraphQLObjectType({
         type: new GraphQLList(CardType),
         args: { uid: { type: GraphQLString } },
         resolve(parent, args) {
-          return Card.findbyID(args.uid);
+          return CardMongoose.findbyID(args.uid);
         },
       },
   
@@ -76,7 +75,7 @@ const RootQuery = new GraphQLObjectType({
         type: new GraphQLList(CardType),
         args: { username: { type: GraphQLString } },
         resolve(parent, args) {
-          return cards.findbyID(args.username);
+          return CardMongoose.findbyID(args.username);
         },
       },
   
@@ -85,7 +84,7 @@ const RootQuery = new GraphQLObjectType({
         type: new GraphQLList(UserType),
         args: { username: { type: GraphQLString } },
         resolve(parent, args) {
-          return User.find();
+          return UserMongoose.find();
         },
       },
   
@@ -94,7 +93,7 @@ const RootQuery = new GraphQLObjectType({
         type: UserType,
         args: { username: { type: GraphQLString } },
         resolve(parent, args) {
-          return User.find(args.username);
+          return UserMongoose.find(args.username);
         },
       },
   
@@ -103,7 +102,7 @@ const RootQuery = new GraphQLObjectType({
         type: UserType,
         args: { email: { type: GraphQLString } },
         resolve(parent, args) {
-          return User.find(args.email);
+          return UserMongoose.find(args.email);
         },
       },
     },
@@ -125,9 +124,17 @@ const RootQuery = new GraphQLObjectType({
           username: { type: GraphQLNonNull(GraphQLString) },
         },
         resolve(parent, args) {
-          //insert mongoose model here for card
-        },
-        //return mongoose model.save();
+          const card = new CardMongoose({
+            name: args.name,
+            supertype: args.supertype,
+            subtype: args.subtype,
+            image: args.image,
+            uid: args.uid,
+            username: args.username
+          });
+
+          return card.save()
+        } 
       },
   
       deleteCard: {

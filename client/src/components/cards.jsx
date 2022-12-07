@@ -1,5 +1,6 @@
 import { gql, useQuery } from '@apollo/client'
-
+import { Segment, Container} from "semantic-ui-react";
+import CardRow from './CardRow';
 const GET_CARDS = gql`
     query getCards {
         cards {
@@ -9,8 +10,7 @@ const GET_CARDS = gql`
             subtype
             image
             uid
-            username
-            
+            username 
         }
     }
 
@@ -23,5 +23,16 @@ export default function Cards() {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Something went wrong</p>;
 
-    return <>{!loading && !error && <h1>Cards</h1>}</>;
+    return<>{!loading && !error && (
+        <Segment>
+            <Container >
+            <h2>Your Card Collection</h2>
+            </Container>,
+            <Container>
+               {data.cards.map((card) => (
+                <CardRow key={card.id} card={card} />
+               ))} 
+            </Container>
+        </Segment>
+    )}</>;
 }

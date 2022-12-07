@@ -2,44 +2,32 @@ const mongoose = require('mongoose');
 
 const cardSchema = new mongoose.Schema(
     {
-        cardId: {
+        name: {
             type: String,
             required: true
         },
-        cardName: {
+        supertype: {
             type: String,
             required: true
         },
-        cardType: {
-            type: Array,
-            required: true
-        },
-        cardNum: {
-            type: Number,
+        subtype: {
+            type: String,
             require: true
         },
-        dexNum: {
-            type: Number,
-            required: true
-        },
-        cardImage: {
+        image: {
             type: String,
             required: true
         },
-        cardImageHiRes: {
+        uid: {
             type: String,
-            required: true
+            require: true
         },
-        userId: {
+        username: {
             type: String,
             require: true
         }
     },
-    {
-        toJSON: {
-            virtuals: true
-        }
-    }
+   
 );
 
-module.exports = mongoose.model('Card', cardSchema);
+module.exports = mongoose.model('CardMongoose', cardSchema);
