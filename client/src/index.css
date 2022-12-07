@@ -1,10 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', "Pokemon Solid",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.homepageDiv {
+  color: white;
+  background-color: #883955;
 }
 
 code {
@@ -16,7 +21,7 @@ code {
   font-family: "Pokemon Solid", sans-serif;
 }
 
-h3 {
+h3, h3 {
   font-family: "Pokemon Solid", sans-serif;
 }
 /* profile page styling */
@@ -27,7 +32,6 @@ h3 {
 }
 
 .profile-header {
-  justify-content: center;
   margin-top: 20px !important;
   padding: 12px !important;
   background-color: maroon;
@@ -35,7 +39,6 @@ h3 {
   width: 100px;
   border: 2px solid #4C3549;
   border-radius: 5px;
-  font-family: "Pokemon Solid", sans-serif;
 }
 
 .profile-btn {
@@ -71,8 +74,8 @@ h3 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  background-color: #6E8387;
+  height: 150px;
+  background-color: #4C3549;
 }
 
 #header {
@@ -89,6 +92,21 @@ h3 {
   min-width: 100vw;
 }
 
-.ui.register-header-text {
+.ui.register-header-text, .header-header {
   font-family: "Pokemon Solid", sans-serif;
+}
+
+/* Card Container Styling */
+
+.user-card-container {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 75vw;
+  background-color: #883955;
+}
+
+/* Footer Styling */
+
+.footer-page {
+  background-color: #4C3549;
 }

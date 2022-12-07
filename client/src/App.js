@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Search from './components/Search';
 import Register from './components/register'
 import Profile from './components/Profile';
+import PageFoot from './components/page/PageFoot';
 import { Routes, Route } from 'react-router-dom'
 import { ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client'
 
@@ -26,7 +27,6 @@ function App() {
     <div className='App'>
       <ApolloProvider client={client}>
       <PokeHeader name={'Super Team'} />
-      <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Search' element={<Search/>} />
@@ -34,13 +34,12 @@ function App() {
         <Route path='/register' element={<Register/>} />
         <Route path='/Profile' element={<Profile/>} />
 
-      
-        
-
 
       </Routes>
       </ApolloProvider>
-      
+     
+
+      <PageFoot />
     </div>
     
   );

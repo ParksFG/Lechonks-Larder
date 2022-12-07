@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className="ui page-container">
       <Message
-      className="ui register-header-text"
+        className="ui register-header-text"
         attached
         justify-content="center"
         header="Welcome to the Larder!"
@@ -13,12 +13,7 @@ const Register = () => {
       />
       <Form className="attached fluid segment">
         <Form.Group widths="equal">
-          <Form.Input
-            fluid
-            label="First Name"
-            placeholder="Ash"
-            type="text"
-          />
+          <Form.Input fluid label="First Name" placeholder="Ash" type="text" />
           <Form.Input
             fluid
             label="Last Name"
@@ -26,7 +21,11 @@ const Register = () => {
             type="text"
           />
         </Form.Group>
-        <Form.Input label="Username" placeholder="Please enter your Trainer Name!" type="text" />
+        <Form.Input
+          label="Username"
+          placeholder="Please enter your Trainer Name!"
+          type="text"
+        />
         <Form.Input label="Password" type="password" />
         <Form.Checkbox inline label="I agree to the terms and conditions" />
         <Button secondary>Submit</Button>
